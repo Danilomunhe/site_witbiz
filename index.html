@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+    <title>Witbiz</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-informations">
+            <div class="texto">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <h1>Em Construção</h1>
+                <p>Nosso site está em construção, mas estamos prontos para começar!<br>
+                    Estamos preparando algo incréivel e
+                    emocionante
+                    para você.</p>
+            </div>
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="WitBiz-Logo">
+                </div>
+            </div>
+        </div>
+        <button class="contato-button" id="abrir-modal">Entre em contato</button>
+        <div class="icons">
+            <a href="https://www.instagram.com/agenciawitbiz/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://m.facebook.com/profile.php/?id=100063693125000&name=xhp_nt__fb__action__open_user"
+                target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5511998394529" target="_blank"><i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal-content">
+            <header>
+                <h2>Fale Conosco</h2>
+            </header>
+            <form action="https://formsubmit.co/dmunhe@witbiz.com.br" method="POST" class="form">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" required></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://www.vaporonbr.com/" />
+                <button type="submit">Enviar</button>
+            </form>
+            <footer>
+                <div id="fechar-modal" class="fechar-modal"><i class="fa-solid fa-x"></i></div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
